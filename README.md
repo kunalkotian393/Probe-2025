@@ -1,0 +1,1 @@
+Python code  for simulation of a Duffing's Oscillator.The Following code plots out the trajectory and the phase plot of the oscillator with the given parameters.The parameters can be changed to observe the impact of each individual parameter on the sytem 
