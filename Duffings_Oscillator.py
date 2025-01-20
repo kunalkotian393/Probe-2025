@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 # para#import time
 
-  # times the computationmeters (mass = 1)
+# times the computationmeters (mass = 1)
 a = 1                #spring constant
 b = 1     #non linear constant
 F_0 = 1         #driving force
