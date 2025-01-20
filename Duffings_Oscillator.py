@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 # para#import time
 
-#t1 = time.time()  # times the computationmeters (mass = 1)
+  # times the computationmeters (mass = 1)
 a = 1                #spring constant
 b = 1     #non linear constant
 F_0 = 1         #driving force
@@ -43,14 +43,7 @@ for i in range(1, len(t)):
     position[i] = x
     velocity[i] = v
 
-#poincare
-strange_attractor = np.zeros([int(T / period), 2])
-k = 1
-for i in range(len(t)):
-    if abs(t[i] - k * period) < h:
-        strange_attractor[k-1, 0] = position[i]
-        strange_attractor[k-1, 1] = velocity[i]
-        k += 1
+
 
 
 
@@ -73,13 +66,3 @@ plt.ylabel('Momentum', fontsize=24)
 plt.tick_params(axis='both', labelsize=24)
 plt.grid()
 
-# Plot the Poincare plot
-plt.figure(3)
-plt.scatter(strange_attractor[:, 0], strange_attractor[:, 1])
-plt.xlabel('Position', fontsize=24)
-plt.ylabel('Momentum', fontsize=24)
-plt.title(r'Poincare Plot (Phase space at time = $\frac{2\pi N}{\omega}$, N = 1,2,3...)', fontsize=24)
-plt.tick_params(axis='both', labelsize=24)
-plt.grid()
-
-plt.show()
