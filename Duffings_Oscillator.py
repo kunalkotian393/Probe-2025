@@ -2,9 +2,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-# para#import time
+# parameters
 
-# times the computationmeters (mass = 1)
+# (mass = 1)
 a = 1                #spring constant
 b = 1     #non linear constant
 F_0 = 1         #driving force
@@ -60,7 +60,7 @@ plt.grid()
 plt.figure(2)
 plt.plot(position[-3000:], velocity[-3000:], 'r-', linewidth=4.0)
 plt.title('Phase space', fontsize=24)
-#plt.xlim([-20, 20])
+
 plt.xlabel('Position', fontsize=24)
 plt.ylabel('Momentum', fontsize=24)
 plt.tick_params(axis='both', labelsize=24)
